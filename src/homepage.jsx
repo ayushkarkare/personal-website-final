@@ -179,14 +179,14 @@ function Homepage() {
             </div>
           </div>
         </section>
-        <div className="projects-entrance">
+        <div id="projects" className="projects-entrance">
           <text className="proj-entrance-text">
             You are now entering ( Projects ) section{" "}
           </text>
           <text className="proj-counter"> ● 01/04</text>
         </div>
       </div>
-      <div id="projects" className="section-two">
+      <div className="section-two">
         <section className="projects">
           <div className="projects-number">01</div>
           <div className="projects-header">Projects</div>
@@ -573,42 +573,42 @@ function Homepage() {
             </>
           }
         />
-        <div className="gallery-entrance">
+        <div id="gallery" className="gallery-entrance">
           <text className="proj-entrance-text">
             You are now entering ( Gallery ) section{" "}
           </text>
           <text className="proj-counter"> ● 02/04</text>
         </div>
       </div>
-      <div id="gallery" className="section-three">
+      <div className="section-three">
         <section className="gallery">
           <div className="projects-number">02</div>
           <div className="projects-header">Gallery</div>
         </section>
         <img src={gallery1} alt="First Image" className="gallery1" />
         <img src={gallery2} alt="First Image" className="gallery1" />
-        <div className="resume-entrance">
+        <div id="resume" className="resume-entrance">
           <text className="proj-entrance-text">
             You are now entering ( Resume ) section{" "}
           </text>
           <text className="resume-counter"> ● 03/04</text>
         </div>
       </div>
-      <div id="resume" className="section-four">
+      <div className="section-four">
         <section className="resume">
           <div className="projects-number">03</div>
           <div className="projects-header">Resume</div>
         </section>
         <img src={resume} alt="Karkare_Ayush" className="resume_photo" />
         <Card />
-        <div className="contact-entrance">
+        <div id="contact" className="contact-entrance">
         <text className="proj-entrance-text">
           You are now entering ( Contact ) section{" "}
         </text>
         <text className="resume-counter"> ● 04/04</text>
       </div>
       </div>
-      <div id="contact" className="section-five">
+      <div className="section-five">
         <section className="contact">
           <div className="projects-number">04</div>
           <div className="projects-header">Contact</div>
