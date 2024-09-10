@@ -1,0 +1,104 @@
+.side-nav {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f4e9e1;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 14px; /* Added top padding to start buttons below the top */
+}
+
+.side-nav ul li {
+  margin-bottom: 10px;
+}
+
+.nav-item {
+  display: flex;
+  height: 85px;
+  width: 143px;
+  flex-direction: column;
+  padding: 5px 15px 20px 20px;
+  text-decoration: none;
+  color: #f4e9e1;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-number {
+  font-size: 12px;
+  margin-top: 5%;
+  font-family: 'StabilGrotesk', sans-serif;
+}
+
+.nav-text {
+  font-size: 18px;
+  font-family:'StabilGrotesk', sans-serif;
+  font-weight: 120;
+  margin-top: 43px;
+}
+
+.nav-item:hover {
+  transform: scale(1.02);
+  background-color: #f4e9e1;
+  border: solid 1px black;
+  color: black;
+}
+
+/* Individual button colors */
+.nav-item-00 { background-color: #ffffff; color: #0e0e0e; }
+.nav-item-01 { background-color: #ff3d00; }
+.nav-item-02 { background-color: #5900CC; }
+.nav-item-03 { background-color: #FF003D; }
+.nav-item-04 { background-color: #1ed33c; }
+
+.nav-number-00 { color: #0e0e0e; }
+.nav-text-00 { color: #0e0e0e; }
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  height: 55px; 
+  width: 178px;
+  background-color: black; /* Or any color you prefer */
+  border-radius: 15px;
+  margin-left: 14px; 
+  margin-bottom: 15px; 
+  padding: 0px 0px 0px 0px;
+}
+
+.social-icons a {
+  color: #f4e9e1;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 25px;
+  padding-left: 12px;
+}
+
+.social-icons b {
+  color: #f4e9e1;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 25px;
+  padding-left: 12px;
+}
+
+.social-icons c {
+  color: #f4e9e1;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 25px;
+  padding-left: 12px;
+}
+.social-icons a:hover { color: #4b99f3; }
+.social-icons b:hover { color: #8b25eb; }
+.social-icons c:hover { color: #08b816; }
+

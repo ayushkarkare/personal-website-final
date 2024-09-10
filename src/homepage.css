@@ -1,0 +1,416 @@
+.homepage {
+    padding: 2rem;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home {
+    background-color: #f4e9e1;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 100%;
+    width: 95%;
+    padding-bottom: 5em;
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .home-title {
+    padding-top: 1%;
+    padding-left: 1%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'StabilGrotesk', sans-serif;
+    margin-top: 0%;
+    color: #0e0e0e;
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .first-name,
+  .last-name {
+    display: block;
+  }
+  
+  .university-text {
+    display: block;
+    margin-top: 0px;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0e0e0e;
+    font-style: italic;
+    padding-bottom: 4em;
+  }
+  
+  .profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-pic-container {
+    width: 40%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    margin-right: 2rem;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aspiration-carousel {
+    font-size: 1.7em;
+    text-align: left;
+    font-weight: bold;
+    color: #ff3d00;
+    padding: 0.5rem;
+    margin-bottom: 0rem;
+    padding-left: 0px;
+    font-family: 'StabilGrotesk', sans-serif;
+  }
+  
+  .aspiration {
+    font-weight: 900;
+    font-size: 90%;
+    font-family: 'StabilGrotesk', sans-serif;
+    color: #0e0e0e;
+    font-style:oblique;
+  }
+  
+  .scroll-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .scroll-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .textbox {
+    width: 100%;
+    background-color: #f4e9e1;
+    padding: 0rem;
+    border-radius: 10px;
+    font-family: 'StabilGrotesk', sans-serif;
+    font-weight: 600;
+    font-size: 110%;
+    color: #ff3d00;
+  }
+
+  .projects-entrance {
+    margin-top: 1.5%;
+    border-radius: 15px;
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 2px;
+    height: 25px;
+    background-color: #ff3d00; 
+  }
+  .proj-entrance-text{
+    margin-left: 42px;
+    font-size: 70%;
+    color: #e0e0e0;
+    font-family: 'StabilGrotesk', sans-serif; 
+    font-weight: 600; 
+  }
+
+  .proj-counter{
+    font-size: 78%;
+    color: #e0e0e0;
+    font-family: 'StabilGrotesk', sans-serif; 
+    font-weight: 400; 
+    padding-left: 72%;
+  }
+
+  .section-one {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .section-two {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+    margin-bottom: 2%;
+  }
+
+  .projects {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 1.5%;
+    margin-bottom: 0.7%;
+    padding-right: 10px;
+    background: #ff3d00;
+  }
+  .projects-number{
+    color: #f4e9e1;
+    font-family: 'StabilGrotesk', sans-serif; 
+    font-size: 100px;
+    padding-left: 3%;
+    padding-top: 3%;
+    font-weight: 500;
+    margin-top: 1.8%;
+  }
+  .projects-header{
+    color: #f4e9e1;
+    font-family: 'StabilGrotesk', sans-serif; 
+    font-size: 200px;
+    padding-left: 2%;
+    font-weight: 500;
+    margin-bottom: 3.2%;
+    margin-top: 15%;
+  }
+  .project1 {
+  padding-bottom: 40px;
+  width: 100%;
+  border-radius: 15px;
+  padding-right: 10px;
+  background-color: #0e0e0e; /* Default background color */
+  margin-top: 1.5%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* Change cursor to pointer for button effect */
+}
+
+.project1.hover-effect:hover {
+  transform: scale(1.01); /* Slight scale effect on hover */
+}
+
+.project1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0; /* Initially no width */
+  background-color: #fa7f0b; /* The color that will be swiped in */
+  transition: width 0.5s ease; /* Smooth transition as it expands from left to right */
+  z-index: 0;
+}
+
+.project1.hover-effect:hover::before {
+  width: 100%; /* Full width on hover to cover the card */
+}
+
+.project1-expanded {
+  height: auto; /* Expand based on content */
+  min-height: 100%; /* Ensure minimum height */
+  background-color: #0e0e0e !important; /* Background goes back to black when expanded */
+}
+
+.project1-header {
+  position: relative;
+  z-index: 1;
+  color: #f4e9e1; /* Default text color */
+  font-family: 'StabilGrotesk', sans-serif; /* Same font as title */
+  padding-left: 4%;
+  padding-top: 3.5%;
+  font-size: 30px;
+}
+
+.project-content {
+  display: none;
+  opacity: 0;
+  padding: 20px;
+  color: #f4e9e1;
+  font-family: 'StabilGrotesk', sans-serif; /* Same font as title */
+  padding-left: 4%;
+}
+
+.project1-expanded .project-content {
+  display: block;
+  opacity: 1;
+}
+
+.project-photo {
+  width: 5%;
+  height: 5%;
+  margin-top: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1050px; /* Adjust this to fit your layout */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px; /* Same border radius as other elements */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth transition with ease */
+  width: 100%;
+}
+
+.carousel-image {
+  width: 25%; /* Adjust to fit 4 images in view */
+  height: auto;
+  object-fit: cover;
+}
+
+.bold{
+  font-weight: bold;
+} 
+
+.video-container {
+  display: flex;
+  justify-content: space-between; /* Space between the two videos */
+  gap: 1rem; /* Add space between the videos */
+  padding-top: 2rem; /* Adds space between the videos and other content */
+}
+
+.video-container iframe {
+  flex: 1; /* Make the videos responsive to fit the container */
+  max-width: 48%; /* Ensures that each video takes about half the container width */
+  height: 315px; /* Fixed height for the video */
+}
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column; /* Stack the videos vertically on smaller screens */
+  }
+
+  .video-container iframe {
+    max-width: 100%; /* Take full width on smaller screens */
+  }
+}
+
+.gallery-entrance{
+    border-radius: 15px;
+    width: 100.5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: auto;
+    background-color: #5900CC;
+    margin-top: 1.5%;
+}
+
+.section-three {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible;
+  margin-bottom: 2%;
+}
+
+.gallery {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 0%;
+  margin-bottom: 1.4%;
+  padding-right: 10px;
+  background: #5900cc;
+}
+.gallery1{
+  width: 104%;
+  margin-bottom: -1.2%;
+}
+
+.resume-entrance{
+  border-radius: 15px;
+    width: 100.5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: auto;
+    background-color: #FF003D;
+    margin-top: 2%;
+    margin-left:-0.3%
+}
+.resume-counter{
+  font-size: 78%;
+  color: #e0e0e0;
+  font-family: 'StabilGrotesk', sans-serif; 
+  font-weight: 400; 
+  padding-left: 71%;
+}
+.section-four {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible;
+  margin-bottom: 2%;
+}
+.resume {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: -0.5%;
+  margin-bottom: 1.4%;
+  padding-right: 10px;
+  background: #FF003D;
+}
+.resume_photo{
+  width: 101%;
+  border-radius: 15px;
+}
+
+.contact-entrance{
+  border-radius: 15px;
+    width: 100.5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: auto;
+    background-color: #1ed33c;
+    margin-top: 2%;
+    margin-left:-0.3%
+}
+
+.contact {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: -0.5%;
+  margin-bottom: 1.4%;
+  padding-right: 10px;
+  background: #1ed33c;
+}
+
+.end-internet  {
+  margin-left: 42px;
+  font-size: 70%;
+  margin-top: -3%;
+  color: #512ec4;
+  font-family: 'StabilGrotesk', sans-serif; 
+  font-weight: 600; 
+  margin-bottom: -3%;
+}

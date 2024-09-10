@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: '';
+  background-color: #f4e9e1;
+  color: #FF8343;
+}
+
+.app {
+  height: auto;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #0e0e0e;
+  border-bottom: 1px solid #FF8343;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
